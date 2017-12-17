@@ -219,6 +219,7 @@ public class QRController extends HttpServlet {
 			}
 			viewName = "/Rent_Result.html";
 		}
+		// 대여중인 모든 List를 JSON 형식으로 response
 		else if(subPath.equals("/list"))
 		{
 			QRDbDao db = new QRDbDao();
